@@ -37,5 +37,8 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Free Trial(5342ca70-ddee-469f-9af6-8c600a988e9d)'
     appType: 'webApp'
-    WebAppName: 'webappdemo'
+    WebAppName: 'dsdemoapp'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'demo'
+    SlotName: 'production'
     packageForLinux: '$(build.artifactStagingDirectory)/**/*.zip'
